@@ -1,0 +1,164 @@
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 450;
+
+}
+
+.modal-container {
+    background-color: var(--gray-7);
+    width: 600px;
+    padding: 25px;
+    min-height: max-content;
+    position: relative;
+    border-radius: 10px;
+    animation-name: animateModal;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+.modal-close {
+    padding: 25px;
+    font-size: 15px;
+    color: var(--gray-3);
+    background: none;
+    position: absolute;
+    top: -7px;
+    right: 7px;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-title {
+    color: var(--brand-1);
+}
+
+.modal-inputs,.select_input {
+    padding: 15px;
+    width: 500px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid var(--gray-5);
+    color: var(--gray-2);
+    height: 50px;
+}
+.select_input{
+    width: 522px;
+    height: 50px;
+}
+
+.select_input:focus{
+    border: 2px solid var(--brand-1);   
+}
+
+.modal-inputs:hover {
+    border: 2px solid var(--brand-1);
+}
+
+.modal-inputs:focus {
+    border: 2px solid var(--brand-1);
+}
+
+.error-message {
+    color: var(--brand-2);
+    display: none;
+}
+
+.error-block {
+    display: block;
+}
+
+.modal-btn {
+    background-color: var(--brand-2);
+    color: var(--gray-6);
+    width: 200px;
+    padding: 15px;
+    border: 1px solid var(--brand-2);
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid var(--brand-2);
+}
+
+.modal-btn:hover {
+    background-color: var(--gray-7);
+    color: var(--brand-2);
+    border: 1px solid var(--brand-2);
+    transition: 0.5s ease;
+}
+
+.modal-btn:hover {
+    background-color: var(--gray-7);
+    color: var(--brand-2);
+    border: 1px solid var(--brand-2);
+    transition: 0.5s ease;
+}
+
+.modal-title {
+    color: var(--brand-1);
+}
+
+
+.loading {
+    animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@media (max-width: 900px) {
+    .modal-container {
+        width: 80%;
+    }
+
+    .modal-inputs {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .modal-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@keyframes animateModal {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

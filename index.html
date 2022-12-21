@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/58c5cd4b82.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="./src/assets/pets_FILL0_wght400_GRAD0_opsz48.png">
+
+  <link rel="stylesheet" href="./src/style/homeCss/header.css">
+  <link rel="stylesheet" href="./src/style/homeCss/buttons.css">
+  <link rel="stylesheet" href="./src/style/homeCss/homeMain.css">
+  <link rel="stylesheet" href="./src/style/cardCss/card.css">
+  <link rel="stylesheet" href="./src/style/orientations.css">
+  <link rel="stylesheet" href="./src/style/modalCss/modal.css">
+  <link rel="stylesheet" href="./src/style/modalCss/modalToast.css">
+  <link rel="stylesheet" href="./src/style/homeCss/footer.css">
+  <link rel="stylesheet" href="./src/style/sizes.css">
+  <link rel="stylesheet" href="./src/style/globalStyle.css">
+  <title>Kenziepets</title>
+
+</head>
+
+<body>
+  <header class="header" id="top">
+    <div class="header_mobile">
+      <div class="logo">
+        <p class="logo_name">Kenziepets</p>
+      </div>
+      <img class="shape_pink" src="./src/assets/Vector (1).jpg">
+      <img src="./src/assets/Vector.jpg" class="shape_purple">
+      <button class="btn_menu">
+        <i class="fa-solid fa-xmark fa-2x"></i>
+        <i class="fa-solid fa-bars fa-2x "></i>
+      </button>
+    </div>
+    <div class="btns_header">
+      <button class="btn_login" data-btn-header="login">Login</button>
+      <button class="btn_signup" data-btn-header="sign_up">Cadastro</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="informations-home">
+      <div class="info-site">
+        <h2 class="title-home">
+          Adote seu amigo pet hoje!
+        </h2>
+        <p class="paragraph-home">
+          Salvar uma bichinho não mudará o mundo, mas mudará o mundo daquele bichinho.
+        </p>
+        <div class="btns-info">
+          <button class="btn-signup-info">Cadastre-se</button>
+          <p>Já possui uma conta? <a href="#" class="link_login"> Faça login</a></p>
+        </div>
+      </div>
+      <div class="div-img-home">
+        <img class="img-home" src="/src/assets/image 1 Palette.svg" alt="">
+      </div>
+
+    </section>
+    <div class="divider">
+
+      <p>Procure animais de estimação em nossa rede de mais de 11.500 abrigos e resgates.</p>
+    </div>
+    <section class="dogs-cats-section">
+      <div class="dog-cat-divs dog-div">
+        <img src="/src/assets/dog.png" alt="dog-face">
+        <span>Cachorros</span>
+      </div>
+      <div class="dog-cat-divs cat-div">
+        <img src="/src/assets/cat.png" alt="cat-face">
+        <span>Gatos</span>
+      </div>
+      <div class="dog-cat-div others-div">
+        <div>
+          <img src="/src/assets/gecko.png" alt="gecko">
+        </div>
+        <span>Outros</span>
+      </div>
+    </section>
+    <section class="pets-rendered-home">
+    </section>
+    <div class="spinner_div">
+      <div class="spinner"></div>
+    </div>
+    </div>
+    <div class="toast">
+      <div class="header_toast">
+        <div class="check">
+          <i class="fa-solid fa-check"></i>
+
+        </div>
+        <p class="title-toast"></p>
+      </div>
+      <p class="message-toast"></p>
+    </div>
+  </main>
+  <div class="footer">
+    <footer>
+      <p>©2022 Kenziepets.com</p>
+      <a href="#top">Voltar ao topo</a>
+    </footer>
+  </div>
+  <script type="module" src="./src/scripts/homeJs/home.js"></script>
+
+</body>
+
+</html>

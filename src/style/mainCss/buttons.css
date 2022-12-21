@@ -1,0 +1,123 @@
+.btn_logout,.btn_profile{
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-8);
+    text-align: center;
+    color: var(--brand-1);
+    background-color: transparent;
+    border: 1px solid var(--color-text-blue);
+    width: max-content;
+    height: max-content;
+}
+    
+.btn_logout:hover,.btn_profile:hover{
+    cursor: pointer;
+    color: var(--brand-2);
+    transition: 0.1s ease;
+}
+.btn_menu{
+    border: 0px solid transparent;
+    background-color: transparent;
+    padding: 15px;
+}
+
+.btn_menu:hover{
+    cursor: pointer;
+}
+
+.fa-xmark{
+    display: none;
+    color: var(--brand-2);
+}
+
+.fa-bars{
+    color: var(--brand-2)
+  
+}
+
+
+@media (min-width:660px){
+    .btn_logout,.btn_profile{
+        width: max-content;
+        height: max-content;
+    }
+}
+
+.btn-favorite {
+    height: 3rem;
+    width: 3rem;
+    display: block;
+    align-items: center;
+    background-image: url("../../assets/likesGreyHeart.svg");
+    background-color: var(--brand-1-opacity-30);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    object-fit: cover;
+    padding-right: 3.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+
+.btn-favorite-enable {
+    background-image: url("../../assets/likesPinkHeart.svg");
+}
+
+.btn-favorite:hover, .btn-favorite-enable:hover {
+    opacity: 50%;
+}
+
+.hidden {
+    display:none;
+}
+
+
+.card-btn-to-adopt {
+    background-color: var(--brand-2);
+    color: var(--gray-6);
+    height: 1.875rem;
+    width: 9rem;
+    border: 1px solid var(--brand-2);
+    border-radius:30px;
+    font-weight: 400;
+    font-size: var(--font-size-8);
+    cursor: pointer;
+    border: 1px solid var(--brand-2);
+}
+
+.card-btn-to-adopt:hover {
+    background-color: var(--gray-7);
+    color: var(--brand-2);
+    border: 1px solid var(--brand-2);
+    transition: 0.5s ease;
+}
+
+.card-btn-adopted {
+    background-color: var(--brand-1);
+    color: var(--gray-6);
+    height: 1.875rem;
+    width: 9rem;
+    border: 1px solid var(--brand-1);
+    border-radius:30px;
+    font-weight: 400;
+    font-size: var(--font-size-8);
+    /* cursor: pointer; */
+    border: 1px solid var(--brand-1);
+}
+
+/* .card-btn-adopted:hover {
+    background-color: var(--gray-7);
+    color: var(--brand-1);
+    border: 1px solid var(--brand-1);
+    transition: 0.5s ease;
+} */
+
+
+.appear{
+    display: flex;
+}
+.hide{
+    display: none;
+}

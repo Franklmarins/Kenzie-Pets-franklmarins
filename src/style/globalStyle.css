@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Salsa&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Salsa', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+:root {
+  --brand-1: #6504b5;
+  --brand-1-opacity-30: #6504b5c1;
+  --brand-2: #ff5678;
+
+  --alert: #ce4646;
+  --sucess: #4ba036;
+
+  --gray-1: #000000;
+  --gray-2: #212529;
+  --gray-3: #495057;
+  --gray-4: #adb5bd;
+  --gray-5: #e9ecef;
+  --gray-6: #f1f3f5;
+  --gray-7: #ffffff;
+  --gray-7-opacity-30: #ffffffb1;
+
+  --font-size-1: 2.5rem; /* 40px */
+  --font-size-2: 2.25rem; /* 36px */
+  --font-size-3: 2rem; /* 32px */
+  --font-size-4: 1.875rem; /* 30px */
+  --font-size-5: 1.75rem; /* 28px */
+  --font-size-6: 1.375rem; /* 22px */
+  --font-size-7: 1.25rem; /* 20px */
+  --font-size-8: 1.125rem; /* 18px */
+  --font-size-9: 1rem; /* 16px */
+  --font-size-10: 0.938rem; /* 15px */
+
+  --font-weight-1: 700;
+  --font-weight-2: 400;
+
+  --font-logo:'Pacifico', cursive;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+ }
+
+@media (min-width: 900px) {
+  .container {
+    width: 100%;
+    /* max-width: 90%; */
+    margin: 0 auto;
+  }
+  .dog-cat-divs {
+    max-width: 140px;
+  }
+  .dog-cat-div {
+    max-width: 140px;
+  }
+  .informations-home>div{
+    width: 50%;
+  }
+  .div-img-home{
+    display: flex;
+  }
+  
+}

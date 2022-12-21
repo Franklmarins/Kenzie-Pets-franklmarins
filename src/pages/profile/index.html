@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/58c5cd4b82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../profile/profile.css">
+    <link rel="stylesheet" href="../../style/globalStyle.css">
+    <link rel="stylesheet" href="../../style/modalCss/modal.css">
+    <link rel="stylesheet" href="../../style/modalCss/modalToast.css">
+    <link rel="stylesheet" href="../../style/profileCss/footer.css">
+    <link rel="stylesheet" href="../../style/profileCss/buttons.css">
+    <link rel="stylesheet" href="../../style/profileCss/header.css">
+    <link rel="stylesheet" href="../../style/profileCss/modalCreate.css">
+    <link rel="stylesheet" href="../../style/cardCss/card.css">
+    <link rel="stylesheet" href="../../style/mainCss/buttons.css">
+    <link rel="icon" href="../../assets/pets_FILL0_wght400_GRAD0_opsz48.png">
+    <title>Profile page</title>
+</head>
+
+<body>
+    <header class="header" id="top">
+        <div class="header_mobile">
+            <div class="logo">
+                <p class="logo_name">Kenziepets</p>
+            </div>
+            <button class="btn_menu">
+                <i class="fa-solid fa-xmark fa-2x"></i>
+                <i class="fa-solid fa-bars fa-2x "></i>
+            </button>
+        </div>
+        <div class="btns_header">
+            <button class="btn_back_home" data-btn-header="back_home">Voltar a home</button>
+            <button class="btn_logout" data-btn-header="logout">Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="div-band"></div>
+        <div class="div-img">
+            <img id="avatar" src="" alt="">
+        </div>
+
+        <div class="user-inf ds-none">
+            <div class="user-inf-datas">
+                <p class="user-inf-name"></p>
+                <p class="user-inf-email"></p>
+            </div>
+            <div class="user-inf-div-btts">
+                <button class="user-edit-inf-btt">Atualizar perfil</button>
+                <p class="user-delete-btt">Deletar conta</p>
+            </div>
+        </div>
+        <button class="register-new-pet-btt">Cadastrar novo pet</button>
+
+        <h3 class="list-title">Adoções</h3>
+        <ul class="user-pet-list pet-list"></ul>
+
+        <h3 class="list-title">Favoritos</h3>
+        <ul class="user-favorite-pet-list pet-list"></ul>
+        <div class="toast">
+            <div class="header_toast">
+                <div class="check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <p class="title-toast"></p>
+            </div>
+            <p class="message-toast"></p>
+        </div>
+    </main>
+
+    <div class="footer">
+        <footer>
+            <p>©2022 Kenziepets.com</p>
+            <a href="#top">Voltar ao topo</a>
+        </footer>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
